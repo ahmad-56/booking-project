@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+    New Booking
+</div>
+
+<div class="container">
+
+    <h3>Select Date & Time</h3>
+
+    <input type="date">
+    <input type="time">
+
+    <input type="text" placeholder="Service (e.g. Doctor, Salon, Tutor)">
+
+    <button onclick="confirmBooking()">Book Now</button>
+
+    <p id="msg"></p>
+</div>
+
+<script>
+function confirmBooking() {
+    document.getElementById("msg").innerText =
+        "Booking created (frontend only - backend not connected yet)";
+}
+</script>
+
+</body>
+</html>
