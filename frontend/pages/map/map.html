@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map Selector</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6f8;
+        }
+
+        .header {
+            padding: 12px;
+            background: #fff;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .map-container {
+            width: 100%;
+            height: calc(100vh - 50px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info {
+            position: absolute;
+            top: 60px;
+            left: 10px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 13px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        📍 Select Location
+    </div>
+
+    <div class="info">
+        Click and explore map (for booking location selection)
+    </div>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Lahore&output=embed"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
