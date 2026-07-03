@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="location.css">
+</head>
+<body>
+
+<header class="progress-header">
+    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" aria-label="Booking progress">
+        <div class="progress-fill step-1"></div>
+    </div>
+    <div class="progress-label">
+        <a href="../../dashboard.html" class="back-btn">← Back</a>
+        <span>Step 1 of 4</span>
+    </div>
+</header>
+
+<main class="step-content">
+    <h1 class="step-heading">STEP 1</h1>
+
+    <div class="search-menu">
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search" placeholder="Search categories...">
+    </div>
+
+    <div class="dropdown-field">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            <option value="" disabled selected>Select an option</option>
+            <option value="doctor">Doctor</option>
+            <option value="salon">Salon</option>
+            <option value="tutor">Tutor</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <button type="button" id="doneBtn" class="done-btn">Done</button>
+</main>
+
+<script src="location.js"></script>
+</body>
+</html>

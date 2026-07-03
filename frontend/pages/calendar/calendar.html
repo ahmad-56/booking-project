@@ -2,22 +2,37 @@
 <html>
 <head>
     <title>Booking Calendar</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="calendar.css">
 </head>
 
 <body>
 
+<header class="progress-header">
+    <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="1" aria-valuemax="4" aria-label="Booking progress">
+        <div class="progress-fill step-2"></div>
+    </div>
+    <div class="progress-label">
+        <a href="../locations/location.html" class="back-btn">← Back</a>
+        <span>Step 2 of 4</span>
+    </div>
+</header>
+
 <div>
+
+    <h1 class="step-heading">STEP 2:</h1>
+
+    <h2>Select Booking Date</h2>
 
     <div id="chosenBox" class="chosen-box"></div>
 
     <div class="calendar">
-        <div class="header">
-            <button onclick="prevMonth()">⬅</button>
+        <div class="header cal-header">
+            <button type="button" class="cal-nav-btn" onclick="prevMonth()" aria-label="Previous month">⬅</button>
             <h3 id="monthYear"></h3>
-            <button onclick="nextMonth()">➡</button>
+            <button type="button" class="cal-nav-btn" onclick="nextMonth()" aria-label="Next month">➡</button>
         </div>
-
+        <br>
         <div class="days">
             <div>Mon</div><div>Tue</div><div>Wed</div>
             <div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
@@ -28,12 +43,24 @@
         <div id="datetime"></div>
     </div>
 
-    <div>
-    <button id="doneBtn" onclick="goToTime()">Tap to Confirm</button>
-    <button id="resetBtn" onclick="resetCalendar()">Select New Date</button>
+    <div class="calendar-actions">
+    <button type="button" id="doneBtn" onclick="goToTime()">Tap to Confirm</button>
+    <button type="button" id="resetBtn" onclick="resetCalendar()">Select New Date</button>
     </div>
 
 </div>
+
+<div class="summary">
+    <h2>Booking Summary</h2>
+    <p>Date: <span id="summaryDate"></span></p>
+    <p>Time: <span id="summaryTime"></span></p>
+    <p>Location: <span id="summaryLocation"></span></p>
+    <p>Provider: <span id="summaryProvider"></span></p>
+    <p>Service: <span id="summaryService"></span></p>
+    <p>Notes: <span id="summaryNotes"></span></p>
+    <p>Total: <span id="summaryTotal"></span></p>
+</div>
+
 
 <script src="calendar.js" defer></script>
 

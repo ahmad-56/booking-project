@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .step-content {
+            max-width: 480px;
+            margin: 48px auto;
+            padding: 0 20px;
+        }
+
+        .search-menu {
+            margin-bottom: 20px;
+        }
+
+        .search-menu label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .search-menu input[type="search"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .search-menu input[type="search"]:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+        }
+
+        .dropdown-field {
+            margin-bottom: 20px;
+        }
+
+        .dropdown-field label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .dropdown-field select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .dropdown-field select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+<header class="progress-header">
+    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" aria-label="Booking progress">
+        <div class="progress-fill step-1"></div>
+    </div>
+    <div class="progress-label">
+        <a href="dashboard.html" class="back-btn">← Back</a>
+        <span>Step 1 of 4</span>
+    </div>
+</header>
+
+<main class="step-content">
+    <h1 class="step-heading">STEP 1</h1>
+
+    <div class="search-menu">
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search" placeholder="Search services, locations...">
+    </div>
+
+    <div class="dropdown-field">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            <option value="" disabled selected>Select an option</option>
+            <option value="doctor">Doctor</option>
+            <option value="salon">Salon</option>
+            <option value="tutor">Tutor</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+</main>
+
+</body>
+</html>

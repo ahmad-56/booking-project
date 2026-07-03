@@ -76,12 +76,12 @@ function renderCalendar() {
 }
 
 function nextMonth() {
-    currentDate.setMonth(currentDate.getMonth() + 1);
+    currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
     renderCalendar();
 }
 
 function prevMonth() {
-    currentDate.setMonth(currentDate.getMonth() - 1);
+    currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
     renderCalendar();
 }
 
