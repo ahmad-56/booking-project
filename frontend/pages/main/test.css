@@ -1,0 +1,132 @@
+/* PAGE */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #ffffff, #e9eef7);
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN BOX */
+.box {
+    width: 520px;
+    min-height: 620px;
+    background: #fff;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    animation: fadeIn 0.5s ease;
+}
+
+/* HEADER */
+.box-header {
+    background: linear-gradient(90deg, #46a5a5, #00c6ff);
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* CONTENT */
+.box-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.step {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #f1f1f1;
+    color: #666;
+}
+
+.step.active {
+    background: #007bff;
+    color: white;
+}
+
+/* BUTTON GROUP */
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* BASE BUTTON */
+.button {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-weight: bold;
+}
+
+/* PRIMARY */
+.primary {
+    background: #007bff;
+    color: white;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,123,255,0.3);
+}
+
+/* SECONDARY */
+.secondary {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.secondary:hover {
+    background: #e2e2e2;
+    transform: translateY(-2px);
+}
+
+/* PULSE BUTTON */
+.pulse {
+    margin-top: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0,123,255,0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(0,123,255,0); }
+    100% { box-shadow: 0 0 0 0 rgba(0,123,255,0); }
+}
+
+/* FOOTER */
+.box-footer {
+    background: #f5f5f5;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

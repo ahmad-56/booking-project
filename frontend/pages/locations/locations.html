@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Website</title>
+    <link rel="stylesheet" href="locations.css">
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="box-header">
+        Select Location
+    </div>
+
+    <div class="search-container">
+    <h1>Search for Locations near you:</h1>
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search a ground near you..."
+        autocomplete="off">
+
+    <div id="dropdown" class="dropdown"></div>
+
+    </div>
+
+    <div id="infoCard" class="info-card">
+
+        <h2 id="infoTitle"></h2>
+        <p id="infoDescription"></p>
+
+    </div>
+    <button id="confirmLocation">
+        Confirm Location
+    </button>
+    <div class="box-footer">
+        Lahore | Pakistan | 2026
+    </div>
+
+</div>
+
+<script src="locations.js"></script>
+</body>
+</html>
